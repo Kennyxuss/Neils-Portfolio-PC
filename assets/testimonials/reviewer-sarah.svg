@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgGradSC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241838"/>
+      <stop offset="100%" stop-color="#0f0c1c"/>
+    </linearGradient>
+    <linearGradient id="accentGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#D4A017"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" fill="url(#bgGradSC)"/>
+  <circle cx="60" cy="45" r="22" fill="#322450" stroke="url(#accentGold)" stroke-width="1.5"/>
+  <path d="M26 102 C26 78, 42 70, 60 70 C78 70, 94 78, 94 102 Z" fill="#281a44" stroke="url(#accentGold)" stroke-width="1.5"/>
+  <text x="60" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#FFF0A6" text-anchor="middle">SC</text>
+  <circle cx="60" cy="60" r="58" fill="none" stroke="url(#accentGold)" stroke-width="2.5" opacity="0.8"/>
+</svg>
