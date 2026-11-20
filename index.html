@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="violet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>NeilHerbertBetacura</title>
+  <meta name="description" content="Personal portfolio of Neil Herbert Betacura – aspiring IT professional and software developer. Showcasing projects such as POS applications, inventory systems, student portals, library management, and vending solutions.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/Profile.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glow Effects -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- ======================== HEADER / NAVIGATION ======================== -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Neil Herbert Betacura Portfolio Home">
+        <span class="logo-box">NH</span>
+        <span class="logo-text">Neil<span>Herbert</span></span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li><a href="#services" class="nav-link"><i class="fa-solid fa-cubes"></i> Services</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projects</a></li>
+          <li><a href="#credentials" class="nav-link"><i class="fa-solid fa-award"></i> Credentials</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Utilities (Theme Switchers + Hire CTA) -->
+      <div class="nav-actions">
+        <!-- Theme Mode Toggle Button -->
+        <button class="icon-btn theme-toggle-btn" id="themeToggleBtn" title="Toggle Light / Dark Mode" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Accent Palette Trigger -->
+        <button class="icon-btn palette-toggle-btn" id="paletteToggleBtn" title="Change Theme Accent Color" aria-label="Theme Accent Palette">
+          <i class="fa-solid fa-palette"></i>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-primary nav-cta">Let's Talk</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle Mobile Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================== ACCENT COLOR PICKER DRAWER ======================== -->
+  <div class="accent-drawer" id="accentDrawer">
+    <div class="accent-drawer-content">
+      <div class="accent-drawer-header">
+        <h4><i class="fa-solid fa-sliders"></i> Accent Colors</h4>
+        <button class="close-drawer-btn" id="closeDrawerBtn">&times;</button>
+      </div>
+      <p class="accent-drawer-desc">Select your preferred dynamic aesthetic:</p>
+      <div class="accent-grid">
+        <button class="accent-swatch active" data-accent-color="violet" style="--c:#8b5cf6;" title="Cyber Violet">
+          <span class="swatch-dot"></span> Violet
+        </button>
+        <button class="accent-swatch" data-accent-color="cyan" style="--c:#06b6d4;" title="Electric Cyan">
+          <span class="swatch-dot"></span> Cyan
+        </button>
+        <button class="accent-swatch" data-accent-color="emerald" style="--c:#10b981;" title="Emerald Mint">
+          <span class="swatch-dot"></span> Emerald
+        </button>
+        <button class="accent-swatch" data-accent-color="amber" style="--c:#f59e0b;" title="Solar Amber">
+          <span class="swatch-dot"></span> Amber
+        </button>
+        <button class="accent-swatch" data-accent-color="rose" style="--c:#f43f5e;" title="Neon Rose">
+          <span class="swatch-dot"></span> Rose
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================== 1. HERO SECTION ======================== -->
+    <section class="hero-section section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="badge-pill">
+            <span class="pulse-status"></span>
+            <span>Available for Freelance &amp; Engineering Roles</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Build a Code Vibe with <span class="gradient-text">Neil</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">I am a</span>
+            <span class="typing" id="heroTyping"></span>
+          </div>
+
+          <p class="hero-bio">
+            I’m a technology driven developer focused on designing, developing, and delivering practical digital solutions. I work across web technologies, software applications, and information systems, combining technical knowledge with creative problem-solving to build functional, user-friendly, and efficient platforms. My experience includes frontend and backend development, interface design, database integration, system architecture, and IT support. By incorporating modern technologies and AI-powered development tools into my process, I continuously explore better ways to innovate, optimize workflows, and transform complex ideas into dependable digital products.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-explore"><i class="fa-solid fa-arrow-down"></i> Explore Work</a>
+            <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+            <a href="assets/Resume2.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" id="cvDownloadBtn"><i class="fa-solid fa-file-lines"></i> View Resume</a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/Kennyxuss" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/neil.herbert.betacura.2025/" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=neilherbertbetacura@gmail.com" class="social-link" title="Gmail"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/neil-herbert-betacura-756865450/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/niilz.xoxo_08?cnvx=MWY2dWdoMjd3cnQzcA==" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Display Card -->
+        <div class="hero-visual">
+          <div class="glass-card visual-card">
+            <div class="visual-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="status-indicator">
+                <i class="fa-solid fa-terminal"></i> terminal@betacura:~$
+              </div>
+            </div>
+
+            <div class="visual-body">
+              <div class="avatar-wrapper">
+                <img src="assets/images/Profile-Avatar.jpg" alt="Profile Avatar" class="hero-avatar-img">
+                <div class="avatar-tech-ring"></div>
+                <div class="avatar-chip chip-dev">&lt;/&gt; DEV</div>
+                <div class="avatar-chip chip-ai">AI + ML</div>
+                <div class="avatar-chip chip-online"><span class="chip-dot"></span> ONLINE</div>
+              </div>
+
+              <!-- Interactive Live Code Snippet -->
+              <div class="code-preview">
+                <p><span class="c-purple">const</span> <span class="c-blue">engineer</span> = {</p>
+                <p class="indent"><span class="c-cyan">name</span>: <span class="c-green">'Neil Herbert Betacura'</span>,</p>
+                <p class="indent"><span class="c-cyan">role</span>: <span class="c-green">'Web Application Developer &amp; Software Developer'</span>,</p>
+                <p class="indent"><span class="c-cyan">coreStack</span>: [<span class="c-green">'HTML5'</span>, <span class="c-green">'Python'</span>, <span class="c-green">'JavaScript'</span>, <span class="c-green">'MySQL'</span>,<span class="c-green">'MS Access'</span>],</p>
+                <p class="indent"><span class="c-cyan">passion</span>: <span class="c-green">'Building impactful, robust products'</span>,</p>
+                <p class="indent"><span class="c-yellow">deploy</span>: () =&gt; <span class="c-purple">import</span>(<span class="c-green">'future-forward'</span>)</p>
+                <p>};</p>
+              </div>
+            </div>
+
+            <!-- Floating Micro Badges -->
+            <div class="floating-badge badge-top-right">
+              <i class="fa-solid fa-bolt"></i>
+              <span>High Performance SLA</span>
+            </div>
+            <div class="floating-badge badge-bottom-left">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Zero-Trust Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Stats Counter Strip -->
+      <div class="stats-strip">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="35">27+</h3>
+            <p class="stat-label">Projects Created</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="5">5+</h3>
+            <p class="stat-label">Web & Software Engineering</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="99">76.8%</h3>
+            <p class="stat-label">Client Satisfaction</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="15">15+</h3>
+            <p class="stat-label">Microservices Built</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== 2. ABOUT ME SECTION ======================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span class="sub-heading"><i class="fa-solid fa-id-card"></i> Profile Overview</span>
+          <h2 class="main-heading">Driven by Innovation &amp; Clean Architecture</h2>
+          <p class="heading-lead">Transforming complex software challenges into elegant, highly maintainable digital solutions.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Bio Card -->
+          <div class="glass-card about-story-card">
+            <h3>Who I Am</h3>
+            <p>
+              Hello! I'm <strong>Neil Herbert Betacura</strong>, a Web Developer and IT Solutions Specialist passionate about transforming ideas into innovative digital solutions. With a strong interest in technology, software development, and problem-solving, I create websites, customized information systems, and applications designed to make everyday processes smarter, faster, and more efficient.
+            </p>
+            <p>
+              My expertise covers frontend and backend development, UI/UX design, database management, system development, hardware and software troubleshooting, PC assembly, and IT technical support. I also leverage AI-assisted development tools to enhance productivity, explore new technologies, and develop more efficient approaches to solving technical challenges.
+            </p>
+            <p>
+              I believe that great technology is not simply about creating something that works it is about building solutions that serve a purpose, solve real-world problems, and deliver meaningful results.
+            </p>
+            <p>
+              Take a look around and explore my work. Discover the projects I've developed, the technologies I've explored, and the solutions I've brought to life. Whether you're looking for a developer, a technical collaborator, or someone who can turn an idea into a working system, I'm ready to take on the challenge.
+            </p>
+
+            <div class="core-strengths-grid">
+              <div class="strength-card">
+                <i class="fa-solid fa-cubes-stacked icon-modular"></i>
+                <div>
+                  <h4>Modular Architecture</h4>
+                  <p>Decoupled systems that scale without technical debt.</p>
+                </div>
+              </div>
+              <div class="strength-card">
+                <i class="fa-solid fa-brain icon-ai"></i>
+                <div>
+                  <h4>AI Integration</h4>
+                  <p>Practical LLM agent pipelines and workflow automations.</p>
+                </div>
+              </div>
+              <div class="strength-card">
+                <i class="fa-solid fa-gauge-high icon-speed"></i>
+                <div>
+                  <h4>Speed &amp; Reliability</h4>
+                  <p>Sub-second response times and automated test coverage.</p>
+                </div>
+              </div>
+              <div class="strength-card">
+                <i class="fa-solid fa-laptop-code icon-toolchains"></i>
+                <div>
+                  <h4>Modern Toolchains</h4>
+                  <p>CI/CD pipelines, containerization, and type-safe systems.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Info & Highlights -->
+          <div class="about-meta-column">
+            <!-- Personal Info Matrix -->
+            <div class="glass-card meta-matrix-card">
+              <h3>Snapshot Details</h3>
+              <ul class="meta-list">
+                <li><span class="meta-label"><i class="fa-solid fa-user-tag"></i> Role:</span> <span class="meta-val">IT Solutions Specialist</span></li>
+                <li><span class="meta-label"><i class="fa-solid fa-location-dot"></i> Base:</span> <span class="meta-val">P-2, Poblacion, Kadingilan, Bukidnon</span></li>
+                <li><span class="meta-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span> <span class="meta-val">B.S. in Information Technology (BSIT)</span></li>
+                <li><span class="meta-label"><i class="fa-solid fa-briefcase"></i> Experience:</span> <span class="meta-val">10+ Years Industry Experience</span></li>
+                <li><span class="meta-label"><i class="fa-solid fa-globe"></i> Languages:</span> <span class="meta-val">English, Filipino</span></li>
+                <li><span class="meta-label"><i class="fa-solid fa-envelope"></i> Email:</span> <span class="meta-val">neilherbertbetacura@gmail.com</span></li>
+                <li><span class="meta-label"><i class="fa-solid fa-circle-check"></i> Availability:</span> <span class="meta-val highlight">Open for Contracts &amp; Roles</span></li>
+              </ul>
+            </div>
+
+            <!-- Neil's Award History Card -->
+            <div class="glass-card awards-history-card">
+              <!-- Card Header -->
+              <div class="awards-card-header">
+                <div class="awards-header-left">
+                  <div class="awards-icon-badge">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                  </div>
+                  <div>
+                    <h3 class="awards-title">Neil's Award History</h3>
+                    <span class="awards-subtitle">Academic Achievements</span>
+                  </div>
+                </div>
+                <span class="awards-count-badge">
+                  <i class="fa-solid fa-trophy"></i> 18 Awards
+                </span>
+              </div>
+
+              <!-- Internal Navigation Bar -->
+              <nav class="awards-nav-bar" aria-label="Award History Categories">
+                <button type="button" class="award-nav-btn active" data-award-target="award-cat-college">College</button>
+                <button type="button" class="award-nav-btn" data-award-target="award-cat-senior-high">Senior High</button>
+                <button type="button" class="award-nav-btn" data-award-target="award-cat-junior-high">Junior High</button>
+                <button type="button" class="award-nav-btn" data-award-target="award-cat-elementary">Elementary</button>
+                <button type="button" class="award-nav-btn" data-award-target="award-cat-kindergarten">Kindergarten</button>
+              </nav>
+
+              <!-- Award History Content Body (Tabbed by Category) -->
+              <div class="awards-content-body" id="awardsContentBody">
+                <!-- 1. COLLEGE -->
+                <div class="award-category-group active" id="award-cat-college" data-award-group="award-cat-college">
+                  <div class="category-header-banner">
+                    <div class="cat-title-left">
+                      <i class="fa-solid fa-building-columns"></i>
+                      <span>College Level</span>
+                    </div>
+                    <span class="cat-count">4 Achievements</span>
+                  </div>
+                  <ul class="awards-list">
+                    <li class="award-item award-deans-list">
+                      <div class="award-item-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">BSIT 2nd Year</span>
+                        <span class="award-item-detail">Dean's Lister 2nd Sem</span>
+                      </div>
+                      <span class="award-tag-pill tag-deans-lister"><i class="fa-solid fa-graduation-cap"></i> DEAN'S LISTER</span>
+                    </li>
+                    <li class="award-item award-deans-list">
+                      <div class="award-item-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">BSIT 2nd Year</span>
+                        <span class="award-item-detail">Dean's Lister 1st Sem</span>
+                      </div>
+                      <span class="award-tag-pill tag-deans-lister"><i class="fa-solid fa-graduation-cap"></i> DEAN'S LISTER</span>
+                    </li>
+                    <li class="award-item award-deans-list">
+                      <div class="award-item-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">BSIT 1st Year</span>
+                        <span class="award-item-detail">Dean's Lister 2nd Sem</span>
+                      </div>
+                      <span class="award-tag-pill tag-deans-lister"><i class="fa-solid fa-graduation-cap"></i> DEAN'S LISTER</span>
+                    </li>
+                    <li class="award-item award-deans-list">
+                      <div class="award-item-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">BSIT 1st Year</span>
+                        <span class="award-item-detail">Dean's Lister 1st Sem</span>
+                      </div>
+                      <span class="award-tag-pill tag-deans-lister"><i class="fa-solid fa-graduation-cap"></i> DEAN'S LISTER</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 2. SENIOR HIGH SCHOOL -->
+                <div class="award-category-group" id="award-cat-senior-high" data-award-group="award-cat-senior-high">
+                  <div class="category-header-banner">
+                    <div class="cat-title-left">
+                      <i class="fa-solid fa-graduation-cap"></i>
+                      <span>Senior High School</span>
+                    </div>
+                    <span class="cat-count">2 Achievements</span>
+                  </div>
+                  <ul class="awards-list">
+                    <li class="award-item award-high-honor">
+                      <div class="award-item-icon"><i class="fa-solid fa-trophy"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Senior High 2nd</span>
+                        <span class="award-item-detail">High Honor</span>
+                      </div>
+                      <span class="award-tag-pill tag-high-honor"><i class="fa-solid fa-trophy"></i> HIGH HONOR</span>
+                    </li>
+                    <li class="award-item award-high-honor">
+                      <div class="award-item-icon"><i class="fa-solid fa-trophy"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Senior High 1st</span>
+                        <span class="award-item-detail">High Honor</span>
+                      </div>
+                      <span class="award-tag-pill tag-high-honor"><i class="fa-solid fa-trophy"></i> HIGH HONOR</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 3. JUNIOR HIGH SCHOOL -->
+                <div class="award-category-group" id="award-cat-junior-high" data-award-group="award-cat-junior-high">
+                  <div class="category-header-banner">
+                    <div class="cat-title-left">
+                      <i class="fa-solid fa-school"></i>
+                      <span>Junior High School</span>
+                    </div>
+                    <span class="cat-count">4 Achievements</span>
+                  </div>
+                  <ul class="awards-list">
+                    <li class="award-item award-high-honor">
+                      <div class="award-item-icon"><i class="fa-solid fa-trophy"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Junior High 4th</span>
+                        <span class="award-item-detail">High Honor</span>
+                      </div>
+                      <span class="award-tag-pill tag-high-honor"><i class="fa-solid fa-trophy"></i> HIGH HONOR</span>
+                    </li>
+                    <li class="award-item award-high-honor">
+                      <div class="award-item-icon"><i class="fa-solid fa-trophy"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Junior High 3rd</span>
+                        <span class="award-item-detail">High Honor</span>
+                      </div>
+                      <span class="award-tag-pill tag-high-honor"><i class="fa-solid fa-trophy"></i> HIGH HONOR</span>
+                    </li>
+                    <li class="award-item award-honor">
+                      <div class="award-item-icon"><i class="fa-solid fa-medal"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Junior High 2nd</span>
+                        <span class="award-item-detail">Honor</span>
+                      </div>
+                      <span class="award-tag-pill tag-honor"><i class="fa-solid fa-medal"></i> HONOR</span>
+                    </li>
+                    <li class="award-item award-honor">
+                      <div class="award-item-icon"><i class="fa-solid fa-medal"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Junior High 1st</span>
+                        <span class="award-item-detail">Honor</span>
+                      </div>
+                      <span class="award-tag-pill tag-honor"><i class="fa-solid fa-medal"></i> HONOR</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 4. ELEMENTARY -->
+                <div class="award-category-group" id="award-cat-elementary" data-award-group="award-cat-elementary">
+                  <div class="category-header-banner">
+                    <div class="cat-title-left">
+                      <i class="fa-solid fa-book-open"></i>
+                      <span>Elementary</span>
+                    </div>
+                    <span class="cat-count">6 Achievements</span>
+                  </div>
+                  <ul class="awards-list">
+                    <li class="award-item award-high-honor">
+                      <div class="award-item-icon"><i class="fa-solid fa-trophy"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Grade 6</span>
+                        <span class="award-item-detail">High Honor</span>
+                      </div>
+                      <span class="award-tag-pill tag-high-honor"><i class="fa-solid fa-trophy"></i> HIGH HONOR</span>
+                    </li>
+                    <li class="award-item award-high-honor">
+                      <div class="award-item-icon"><i class="fa-solid fa-trophy"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Grade 5</span>
+                        <span class="award-item-detail">High Honor</span>
+                      </div>
+                      <span class="award-tag-pill tag-high-honor"><i class="fa-solid fa-trophy"></i> HIGH HONOR</span>
+                    </li>
+                    <li class="award-item award-honor">
+                      <div class="award-item-icon"><i class="fa-solid fa-medal"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Grade 4</span>
+                        <span class="award-item-detail">Honor</span>
+                      </div>
+                      <span class="award-tag-pill tag-honor"><i class="fa-solid fa-medal"></i> HONOR</span>
+                    </li>
+                    <li class="award-item award-achiever">
+                      <div class="award-item-icon"><i class="fa-solid fa-star"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Grade 3</span>
+                        <span class="award-item-detail">Achiever</span>
+                      </div>
+                      <span class="award-tag-pill tag-achiever"><i class="fa-solid fa-star"></i> ACHIEVER</span>
+                    </li>
+                    <li class="award-item award-achiever">
+                      <div class="award-item-icon"><i class="fa-solid fa-star"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Grade 2</span>
+                        <span class="award-item-detail">Achiever</span>
+                      </div>
+                      <span class="award-tag-pill tag-achiever"><i class="fa-solid fa-star"></i> ACHIEVER</span>
+                    </li>
+                    <li class="award-item award-achiever">
+                      <div class="award-item-icon"><i class="fa-solid fa-star"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Grade 1</span>
+                        <span class="award-item-detail">Achiever</span>
+                      </div>
+                      <span class="award-tag-pill tag-achiever"><i class="fa-solid fa-star"></i> ACHIEVER</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- 5. KINDERGARTEN -->
+                <div class="award-category-group" id="award-cat-kindergarten" data-award-group="award-cat-kindergarten">
+                  <div class="category-header-banner">
+                    <div class="cat-title-left">
+                      <i class="fa-solid fa-shapes"></i>
+                      <span>Kindergarten</span>
+                    </div>
+                    <span class="cat-count">2 Achievements</span>
+                  </div>
+                  <ul class="awards-list">
+                    <li class="award-item award-achiever">
+                      <div class="award-item-icon"><i class="fa-solid fa-star"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Kindergarten 2</span>
+                        <span class="award-item-detail">Achiever</span>
+                      </div>
+                      <span class="award-tag-pill tag-achiever"><i class="fa-solid fa-star"></i> ACHIEVER</span>
+                    </li>
+                    <li class="award-item award-achiever">
+                      <div class="award-item-icon"><i class="fa-solid fa-star"></i></div>
+                      <div class="award-item-content">
+                        <span class="award-item-name">Kindergarten 1</span>
+                        <span class="award-item-detail">Achiever</span>
+                      </div>
+                      <span class="award-tag-pill tag-achiever"><i class="fa-solid fa-star"></i> ACHIEVER</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dual Track Experience & Education Timeline -->
+        <div class="timeline-section-wrapper">
+          <div class="timeline-tabs">
+            <button class="t-tab-btn active" data-timeline-target="experience"><i class="fa-solid fa-briefcase"></i> Work Experience</button>
+            <button class="t-tab-btn" data-timeline-target="education"><i class="fa-solid fa-graduation-cap"></i> Education &amp; Milestones</button>
+          </div>
+
+          <!-- Track 1: Experience -->
+          <div class="timeline-container active" id="experienceTrack">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2023 - Present</span>
+                  <div class="timeline-badges-wrapper">
+                    <span class="timeline-badge badge-ongoing"><span class="dot-pulse"></span> CURRENT</span>
+                    <span class="timeline-badge badge-gov-glow"><i class="fa-solid fa-building-columns"></i> MUNICIPAL GOVERNMENT</span>
+                  </div>
+                </div>
+                <h4 class="timeline-role">Municipal Government Experience</h4>
+                <h5 class="timeline-company">IT Support & Database Assistant</h5>
+                <p class="timeline-desc">
+                  Assisted with administrative and technical operations, including database encoding and management, document preparation, Microsoft Word processing, file organization, and basic computer maintenance. Supported office productivity by handling digital records and ensuring computer equipment remained functional.
+                </p>
+                <div class="timeline-tags">
+                  <span>Database Management</span>
+                  <span>MS Word</span>
+                  <span>Data Encoding</span>
+                  <span>Computer Maintenance</span>
+                  <span>Office Administration</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2021 - 2023</span>
+                  <div class="timeline-badges-wrapper">
+                    <span class="timeline-badge badge-teaching-glow"><i class="fa-solid fa-graduation-cap"></i> TEACHING</span>
+                  </div>
+                </div>
+                <h4 class="timeline-role">Educational Experience</h4>
+                <h5 class="timeline-company">IT Instructor / Computer Literacy Facilitator</h5>
+                <p class="timeline-desc">
+                  Introduced students to fundamental Information Technology concepts, basic computer operations, and digital literacy. Assisted learners in understanding computer hardware, software applications, and essential technology skills through practical demonstrations and guided instruction.
+                </p>
+                <div class="timeline-tags">
+                  <span>IT Fundamentals</span>
+                  <span>Computer Literacy</span>
+                  <span>Instructions</span>
+                  <span>Communication</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2019 - 2021</span>
+                  <div class="timeline-badges-wrapper">
+                    <span class="timeline-badge badge-itsupport-glow"><i class="fa-solid fa-screwdriver-wrench"></i> IT SUPPORT</span>
+                  </div>
+                </div>
+                <h4 class="timeline-role">Technical Services Experience</h4>
+                <h5 class="timeline-company">Freelance Computer Technician</h5>
+                <p class="timeline-desc">
+                  Provided on-site computer and laptop troubleshooting, maintenance, software installation, operating system configuration, and basic hardware diagnostics. Delivered personalized technical assistance to clients in their homes, helping resolve computer-related issues and improve device performance.
+                </p>
+                <div class="timeline-tags">
+                  <span>Hardware Troubleshooting</span>
+                  <span>Software Installation</span>
+                  <span>Laptop Repair</span>
+                  <span>Windows OS</span>
+                  <span>Technical Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Track 2: Education -->
+          <div class="timeline-container" id="educationTrack">
+            <!-- 1. College (BSIT) -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2026 - 2027</span>
+                  <div class="timeline-badges-wrapper">
+                    <span class="timeline-badge badge-ongoing"><span class="dot-pulse"></span> ONGOING</span>
+                  </div>
+                </div>
+                <h4 class="timeline-role">Bachelor of Science in Information Technology (BSIT)</h4>
+                <h5 class="timeline-company">Torres Capitol College (TCC)</h5>
+                <p class="timeline-desc">
+                  Graduated top of class. Specialized in Distributed Systems, Algorithms, Data Modeling, and Software Engineering Methodologies. Lead Developer for the University Capstone Innovation Award.
+                </p>
+                <div class="timeline-actions">
+                  <button class="view-cert-btn" type="button" onclick="openCertModal('assets/certificates/tcc-bsit-certificate.svg', 'Torres Capitol College (TCC) — BSIT Certificate', 'Official certificate of academic standing and enrollment recognition for Bachelor of Science in Information Technology (BSIT).')">
+                    <i class="fa-solid fa-certificate"></i> View Certificate
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. High School (GAS) -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2023 - 2024</span>
+                  <div class="timeline-badges-wrapper">
+                    <span class="timeline-badge badge-golden-green"><i class="fa-solid fa-graduation-cap"></i> GRADUATED</span>
+                    <span class="timeline-badge badge-golden-glow"><i class="fa-solid fa-medal"></i> WITH HIGH HONORS</span>
+                  </div>
+                </div>
+                <h4 class="timeline-role">General Academic Strand (GAS)</h4>
+                <h5 class="timeline-company">San Isidro High School (SIHS)</h5>
+                <p class="timeline-desc">
+                  Graduated top of class. Specialized in Distributed Systems, Algorithms, Data Modeling, and Software Engineering Methodologies. Lead Developer for the University Capstone Innovation Award.
+                </p>
+                <div class="timeline-actions">
+                  <button class="view-cert-btn" type="button" onclick="openCertModal('assets/certificates/High-School.png', 'San Isidro High School (SIHS) — High School Diploma', 'Official diploma of graduation in General Academic Strand (GAS) awarded With High Honor.')">
+                    <i class="fa-solid fa-certificate"></i> View Certificate
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Elementary -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2016 - 2017</span>
+                  <div class="timeline-badges-wrapper">
+                    <span class="timeline-badge badge-golden-green"><i class="fa-solid fa-graduation-cap"></i> GRADUATED</span>
+                    <span class="timeline-badge badge-golden-glow"><i class="fa-solid fa-medal"></i> WITH HIGH HONORS</span>
+                  </div>
+                </div>
+                <h4 class="timeline-role">Elementary Edition School</h4>
+                <h5 class="timeline-company">Kadingilan Central Elementary School</h5>
+                <p class="timeline-desc">
+                  Graduated top of class. Specialized in Distributed Systems, Algorithms, Data Modeling, and Software Engineering Methodologies. Lead Developer for the University Capstone Innovation Award.
+                </p>
+                <div class="timeline-actions">
+                  <button class="view-cert-btn" type="button" onclick="openCertModal('assets/certificates/KCES-Diploma.png', 'Kadingilan Central Elementary School — Graduation Diploma', 'Official certificate of graduation from Elementary Edition School awarded With High Honor.')">
+                    <i class="fa-solid fa-certificate"></i> View Certificate
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Day-Care Center -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2010 - 2011</span>
+                  <div class="timeline-badges-wrapper">
+                    <span class="timeline-badge badge-golden-green"><i class="fa-solid fa-graduation-cap"></i> GRADUATED</span>
+                  </div>
+                </div>
+                <h4 class="timeline-role">Day-Care Center Edition School</h4>
+                <h5 class="timeline-company">Children's Bible Club School (CBCS)</h5>
+                <p class="timeline-desc">
+                  Graduated top of class. Specialized in Distributed Systems, Algorithms, Data Modeling, and Software Engineering Methodologies. Lead Developer for the University Capstone Innovation Award.
+                </p>
+                <div class="timeline-actions">
+                  <button class="view-cert-btn" type="button" onclick="openCertModal('assets/certificates/DayCare-Diploma.png', 'Children\'s Bible Club School (CBCS) — Certificate of Completion', 'Official certificate of completion in Day-Care Center Edition School recognizing early childhood learning excellence.')">
+                    <i class="fa-solid fa-certificate"></i> View Certificate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== 3. SKILLS & TECH STACK ======================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <span class="sub-heading"><i class="fa-solid fa-code"></i> Technical Stack</span>
+          <h2 class="main-heading">Skills &amp; Engineering Toolkit</h2>
+          <p class="heading-lead">A comprehensive suite of modern frameworks, databases, cloud toolchains, and AI integrations.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-pills-wrapper">
+          <button class="pill-btn active" data-skill-filter="all">All Disciplines</button>
+          <button class="pill-btn" data-skill-filter="frontend">Frontend &amp; UI</button>
+          <button class="pill-btn" data-skill-filter="backend">Backend &amp; APIs</button>
+          <button class="pill-btn" data-skill-filter="cloud">Cloud &amp; Databases</button>
+          <button class="pill-btn" data-skill-filter="ai">AI &amp; DevOps</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skill Card 1: Frontend -->
+          <div class="glass-card skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i class="fa-brands fa-react"></i></div>
+              <span class="skill-level level-advanced">Advanced</span>
+            </div>
+            <h4>React &amp; Next.js</h4>
+            <p>SSR, SSG, Server Components, App Router, and complex responsive state management.</p>
+            <div class="skill-tags">
+              <span>Next.js 14/15</span>
+              <span>React Hooks</span>
+              <span>Zustand / Redux</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: TypeScript -->
+          <div class="glass-card skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i class="fa-solid fa-file-code"></i></div>
+              <span class="skill-level level-advanced">Advanced</span>
+            </div>
+            <h4>TypeScript &amp; JavaScript</h4>
+            <p>Strict typing, generics, modern ESNext patterns, performance optimization, and clean modular code.</p>
+            <div class="skill-tags">
+              <span>TypeScript</span>
+              <span>ES6+</span>
+              <span>Async Patterns</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: TailwindCSS -->
+          <div class="glass-card skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i class="fa-solid fa-palette"></i></div>
+              <span class="skill-level level-expert">Expert</span>
+            </div>
+            <h4>TailwindCSS &amp; UI Systems</h4>
+            <p>Design tokens, accessible component libraries, responsive layouts, micro-animations, and theme engines.</p>
+            <div class="skill-tags">
+              <span>TailwindCSS</span>
+              <span>CSS Variables</span>
+              <span>Framer Motion</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Node.js & Express -->
+          <div class="glass-card skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i class="fa-solid fa-server"></i></div>
+              <span class="skill-level level-advanced">Advanced</span>
+            </div>
+            <h4>Node.js &amp; Express</h4>
+            <p>High-concurrency microservices, JWT authentication, event-driven pipelines, and REST APIs.</p>
+            <div class="skill-tags">
+              <span>Express</span>
+              <span>NestJS</span>
+              <span>WebSockets</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 5: Python & FastAPI -->
+          <div class="glass-card skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i class="fa-brands fa-python"></i></div>
+              <span class="skill-level level-advanced">Advanced</span>
+            </div>
+            <h4>Python &amp; FastAPI</h4>
+            <p>Asynchronous APIs, background workers, data processing scripts, and machine learning pipelines.</p>
+            <div class="skill-tags">
+              <span>FastAPI</span>
+              <span>Pydantic</span>
+              <span>Celery</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 6: PostgreSQL & Relational DBs -->
+          <div class="glass-card skill-card" data-category="cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i class="fa-solid fa-database"></i></div>
+              <span class="skill-level level-advanced">Advanced</span>
+            </div>
+            <h4>PostgreSQL &amp; MySQL</h4>
+            <p>Relational schema normalization, complex SQL indexing, query execution tuning, and automated migrations.</p>
+            <div class="skill-tags">
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>Prisma / TypeORM</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 7: Redis & Caching -->
+          <div class="glass-card skill-card" data-category="cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i class="fa-solid fa-bolt"></i></div>
+              <span class="skill-level level-proficient">Proficient</span>
+            </div>
+            <h4>Redis &amp; In-Memory Data</h4>
+            <p>Distributed session storage, rate limiting, pub/sub messaging, and high-speed data caching.</p>
+            <div class="skill-tags">
+              <span>Redis</span>
+              <span>Pub/Sub</span>
+              <span>Rate Limiting</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 8: Docker & Cloud DevOps -->
+          <div class="glass-card skill-card" data-category="cloud">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i class="fa-brands fa-docker"></i></div>
+              <span class="skill-level level-proficient">Proficient</span>
+            </div>
+            <h4>Docker, CI/CD &amp; AWS</h4>
+            <p>Multi-stage container builds, automated GitHub Actions pipelines, AWS ECS, S3, and cloud deployments.</p>
+            <div class="skill-tags">
+              <span>Docker</span>
+              <span>GitHub Actions</span>
+              <span>AWS / Cloud</span>
+            </div>
+          </div>
+
+          <!-- Skill Card 9: AI Pipelines & RAG -->
+          <div class="glass-card skill-card" data-category="ai">
+            <div class="skill-card-top">
+              <div class="skill-icon-box"><i class="fa-solid fa-brain"></i></div>
+              <span class="skill-level level-advanced">Advanced</span>
+            </div>
+            <h4>AI Pipelines &amp; LLM Systems</h4>
+            <p>Retrieval-Augmented Generation (RAG), vector embeddings, agentic workflows, and prompt engineering.</p>
+            <div class="skill-tags">
+              <span>OpenAI API</span>
+              <span>LangChain</span>
+              <span>Vector Search</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== 4. SERVICES SECTION ======================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span class="sub-heading"><i class="fa-solid fa-cubes"></i> What I Offer</span>
+          <h2 class="main-heading">Solutions Designed for Scale</h2>
+          <p class="heading-lead">Custom development services tailored for startups, growth-stage ventures, and enterprise platforms.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-window-restore icon-srv-web"></i></div>
+            <h3>Website Development</h3>
+            <p>Building responsive and user-friendly websites for businesses, organizations, and personal portfolios.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Business &amp; portfolio websites</li>
+              <li><i class="fa-solid fa-check"></i> School &amp; organization websites</li>
+              <li><i class="fa-solid fa-check"></i> Landing pages &amp; information portals</li>
+            </ul>
+            <a href="#contact" class="service-cta">Inquire Now &rarr;</a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-server icon-srv-desktop"></i></div>
+            <h3>Desktop Application Development</h3>
+            <p>Developing practical desktop applications designed to simplify everyday business and organizational operations.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Point of Sale (POS) systems</li>
+              <li><i class="fa-solid fa-check"></i> Inventory management applications</li>
+              <li><i class="fa-solid fa-check"></i> - Student and library management systems</li>
+            </ul>
+            <a href="#contact" class="service-cta">Inquire Now &rarr;</a>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-database icon-srv-db"></i></div>
+            <h3>Database Design & Management</h3>
+            <p>Designing organized databases and developing data management solutions for applications.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Database design and structuring</li>
+              <li><i class="fa-solid fa-check"></i> CRUD operations</li>
+              <li><i class="fa-solid fa-check"></i> Data storage and retrieval</li>
+            </ul>
+            <a href="#contact" class="service-cta">Inquire Now &rarr;</a>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench icon-srv-support"></i></div>
+            <h3>IT Support & Technical Services</h3>
+            <p>Providing basic technical assistance, computer maintenance, and troubleshooting.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Computer troubleshooting</li>
+              <li><i class="fa-solid fa-check"></i> Software installation and configuration</li>
+              <li><i class="fa-solid fa-check"></i> Basic networking and hardware maintenance</li>
+            </ul>
+            <a href="#contact" class="service-cta">Inquire Now &rarr;</a>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen-button icon-srv-uiux"></i></div>
+            <h3>UI/UX Design & Prototyping</h3>
+            <p>Creating intuitive user interfaces and interactive prototypes for web and mobile applications.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Application interface design</li>
+              <li><i class="fa-solid fa-check"></i> Website wireframes and prototypes</li>
+              <li><i class="fa-solid fa-check"></i> Dashboard and system layouts</li>
+            </ul>
+            <a href="#contact" class="service-cta">Inquire Now &rarr;</a>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up icon-srv-iot"></i></div>
+            <h3>Basic Automation & IoT Solutions</h3>
+            <p>Developing simple hardware-based projects and automation solutions using microcontrollers and programming.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Arduino-based projects</li>
+              <li><i class="fa-solid fa-check"></i> Sensor and servo motor integration</li>
+              <li><i class="fa-solid fa-check"></i> - Basic electronics and IoT prototypes</li>
+            </ul>
+            <a href="#contact" class="service-cta">Inquire Now &rarr;</a>
+          </div>
+
+          <!-- Service 7 -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-graduation-cap icon-srv-training"></i></div>
+            <h3>IT Training &amp; Tutorials</h3>
+            <p>Empowering learners and teams through comprehensive computer literacy and practical programming guidance.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Computer literacy training</li>
+              <li><i class="fa-solid fa-check"></i> Basic programming tutorials</li>
+              <li><i class="fa-solid fa-check"></i> IT fundamentals and technology instruction</li>
+            </ul>
+            <a href="#contact" class="service-cta">Inquire Now &rarr;</a>
+          </div>
+
+          <!-- Service 8 -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-file-lines icon-srv-docs"></i></div>
+            <h3>Digital Documentation &amp; Office Solutions</h3>
+            <p>Delivering high-precision document formatting, structured reporting, and systematic database encoding.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Professional document formatting</li>
+              <li><i class="fa-solid fa-check"></i> Reports and digital documentation</li>
+              <li><i class="fa-solid fa-check"></i> Data encoding and records organization</li>
+            </ul>
+            <a href="#contact" class="service-cta">Inquire Now &rarr;</a>
+          </div>
+
+          <!-- Service 9 -->
+          <div class="glass-card service-card">
+            <div class="service-icon"><i class="fa-solid fa-brain icon-srv-ai"></i></div>
+            <h3>AI-Assisted Development &amp; Integration</h3>
+            <p>Harnessing cutting-edge generative AI models and automation tools to enhance application functionality.</p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> AI-assisted application development</li>
+              <li><i class="fa-solid fa-check"></i> AI-powered features and integrations</li>
+              <li><i class="fa-solid fa-check"></i> Intelligent workflow automation</li>
+            </ul>
+            <a href="#contact" class="service-cta">Inquire Now &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== 5. FEATURED PROJECTS SHOWCASE ======================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <span class="sub-heading"><i class="fa-solid fa-layer-group"></i> Selected Works</span>
+          <h2 class="main-heading">Featured Projects &amp; Software Solutions</h2>
+          <p class="heading-lead">A curated selection of production applications, enterprise systems, and open-source tooling.</p>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="filter-pills-wrapper">
+          <button class="pill-btn active" data-project-filter="all">All Projects</button>
+          <button class="pill-btn" data-project-filter="ai">AI &amp; Systems</button>
+          <button class="pill-btn" data-project-filter="saas">Full-Stack SaaS</button>
+          <button class="pill-btn" data-project-filter="cloud">Cloud &amp; DevOps</button>
+          <button class="pill-btn" data-project-filter="mobile">Mobile Apps</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: NexusFlow AI -->
+          <div class="glass-card project-card" data-category="ai">
+            <div class="project-media">
+              <img src="assets/projects/SmartAttendance.png" alt="NexusFlow AI Platform Mockup" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-details-btn" 
+                        data-title="SmartAttendance – Intelligent Attendance Management System"
+                        data-category="AI &amp; Distributed Systems"
+                        data-desc="A modernized attendance management platform designed to streamline student and employee attendance tracking through an intuitive dashboard, centralized records, and automated attendance reporting."
+                        data-metrics="Digital Attendance • Real-Time Monitoring • Automated Reports"
+                        data-tags="HTML5,CSS3,JavaScript,PHP,MySQL,Bootstrap,REST API"
+                        data-img="assets/projects/SmartAttendance.png">
+                  <i class="fa-solid fa-eye"></i> View Architecture
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-badge">AI &amp; LLM Systems</span>
+              <h3 class="project-title">SmartAttendance – Intelligent Attendance Management System</h3>
+              <p class="project-summary">A modernized attendance management platform designed to streamline student and employee attendance tracking through an intuitive dashboard, centralized records, and automated attendance reporting.</p>
+              <div class="project-tech-tags">
+                <span class="tag-html5">HTML5</span>
+                <span class="tag-css3">CSS3</span>
+                <span class="tag-javascript">JavaScript</span>
+                <span class="tag-php">PHP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: HyperScale Cloud POS -->
+          <div class="glass-card project-card" data-category="saas">
+            <div class="project-media">
+              <img src="assets/projects/SavoryBitePOS.png" alt="HyperScale POS Mockup" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-details-btn"
+                        data-title="Savory Bite POS"
+                        data-category="Full-Stack SaaS &amp; Systems"
+                        data-desc="A comprehensive restaurant point-of-sale solution designed to streamline food ordering, cashier operations, customer management, and inventory monitoring. Savory Bite POS provides an integrated platform for managing restaurant transactions, monitoring kitchen activities, and improving overall operational efficiency."
+                        data-metrics="Smart Ordering • Sales Tracking • Inventory Management"
+                        data-tags="Python,JavaScript,HTML5,CSS3,Database Management,REST API"
+                        data-img="assets/projects/SavoryBitePOS.png">
+                  <i class="fa-solid fa-eye"></i> View Architecture
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-badge">Full-Stack SaaS</span>
+              <h3 class="project-title">Savory Bite POS</h3>
+              <p class="project-summary">A comprehensive restaurant point-of-sale solution designed to streamline food ordering, cashier operations, customer management, and inventory monitoring. Savory Bite POS provides an integrated platform for managing restaurant transactions, monitoring kitchen activities, and improving overall operational efficiency.</p>
+              <div class="project-tech-tags">
+                <span class="tag-python">Python</span>
+                <span class="tag-javascript">JavaScript</span>
+                <span class="tag-html5">HTML5</span>
+                <span class="tag-css3">CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: OmniPulse Telemetry -->
+          <div class="glass-card project-card" data-category="cloud">
+            <div class="project-media">
+              <img src="assets/projects/Queing.png" alt="OmniPulse Telemetry Mockup" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-details-btn"
+                        data-title="Digital Queue Management & Customer Service Application"
+                        data-category="Cloud &amp; DevOps"
+                        data-desc="A desktop-based queue management application designed to organize customer flow, automate ticket numbering, and improve service efficiency. The system allows administrators and service personnel to manage waiting customers, call the next available ticket, and monitor queue statuses across multiple service counters."
+                        data-metrics="Automated Queueing • Real-Time Updates • Efficient Customer Service"
+                        data-tags="Python,Tkinter,SQLite,MySQL,Java,Database Management,Desktop GUI Development"
+                        data-img="assets/projects/Queing.png">
+                  <i class="fa-solid fa-eye"></i> View Architecture
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-badge">Cloud &amp; DevOps</span>
+              <h3 class="project-title">Digital Queue Management</h3>
+              <p class="project-summary">A desktop-based queue management application designed to organize customer flow, automate ticket numbering, and improve service efficiency. The system allows administrators and service personnel to manage waiting customers, call the next available ticket, and monitor queue statuses across multiple service counters.</p>
+              <div class="project-tech-tags">
+                <span class="tag-python">Python</span>
+                <span class="tag-tkinter">Tkinter</span>
+                <span class="tag-sqlite">SQLite</span>
+                <span class="tag-mysql">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Zenith Telehealth App -->
+          <div class="glass-card project-card" data-category="mobile">
+            <div class="project-media">
+              <img src="assets/projects/BookManagement.png" alt="Zenith Telehealth App Mockup" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-details-btn"
+                        data-title="Digital Library & Book Management Platform"
+                        data-category="Mobile &amp; Healthcare"
+                        data-desc="A centralized library management application designed to simplify book cataloging, member registration, borrowing transactions, and return management. The platform provides administrators with organized library records, real-time book availability, and efficient monitoring of library resources."
+                        data-metrics="Digital Cataloging • Book Tracking • Automated Borrowing & Returns"
+                        data-tags="Java,Python,HTML5,CSS3,JavaScript,MySQL,SQLite,Microsoft Access"
+                        data-img="assets/projects/BookManagement.png">
+                  <i class="fa-solid fa-eye"></i> View Architecture
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-badge">Mobile Application</span>
+              <h3 class="project-title">Digital Library & Book Management Platform</h3>
+              <p class="project-summary">A centralized library management application designed to simplify book cataloging, member registration, borrowing transactions, and return management.</p>
+              <div class="project-tech-tags">
+                <span class="tag-java">Java</span>
+                <span class="tag-python">Python</span>
+                <span class="tag-html5">HTML5</span>
+                <span class="tag-css3">CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: CryptoSphere Analytics -->
+          <div class="glass-card project-card" data-category="saas">
+            <div class="project-media">
+              <img src="assets/projects/Pharmacy.png" alt="CryptoSphere Mockup" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-details-btn"
+                        data-title="Pharmacy Inventory System"
+                        data-category="FinTech &amp; High-Frequency Systems"
+                        data-desc="A comprehensive pharmacy inventory management solution designed to simplify medicine tracking, sales transactions, and stock monitoring. The Pharmacy Inventory System provides an integrated platform for managing medicines, monitoring inventory levels, tracking sales, managing suppliers, and identifying low-stock and expiring products."
+                        data-metrics="Smart Inventory • Medicine Tracking • Sales Management"
+                        data-tags="Python,JavaScript,HTML5,CSS3,Database Management"
+                        data-img="assets/projects/Pharmacy.png">
+                  <i class="fa-solid fa-eye"></i> View Architecture
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-badge">FinTech SaaS</span>
+              <h3 class="project-title">Pharmacy Inventory System</h3>
+              <p class="project-summary">A comprehensive pharmacy inventory management solution designed to simplify medicine tracking, sales transactions, and stock monitoring.</p>
+              <div class="project-tech-tags">
+                <span class="tag-python">Python</span>
+                <span class="tag-javascript">JavaScript</span>
+                <span class="tag-html5">HTML5</span>
+                <span class="tag-css3">CSS3</span>
+                <span class="tag-dbm">Database Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: FoodCraft On-Demand -->
+          <div class="glass-card project-card" data-category="mobile">
+            <div class="project-media">
+              <img src="assets/projects/Portal2.png" alt="FoodCraft Mockup" loading="lazy">
+              <div class="project-overlay">
+                <button class="btn btn-primary btn-sm view-details-btn"
+                        data-title="PCC Student Portal System"
+                        data-category="E-Commerce &amp; Logistics"
+                        data-desc="The PCC Student Portal System is a web-based platform designed to help students conveniently access their academic information. It provides a centralized system for viewing enrollment details, checking grades, accessing announcements, and managing student profiles."
+                        data-metrics="Student Access • Enrollment • Academic Records"
+                        data-tags="Python,JavaScript,HTML5,Stripe,CSS3,Database Management"
+                        data-img="assets/projects/Portal2.png">
+                  <i class="fa-solid fa-eye"></i> View Architecture
+                </button>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-badge">E-Commerce &amp; Logistics</span>
+              <h3 class="project-title">PCC Student Portal System</h3>
+              <p class="project-summary">A web-based platform for students to access their academic information and manage their profiles.</p>
+              <div class="project-tech-tags">
+                <span class="tag-python">Python</span>
+                <span class="tag-javascript">JavaScript</span>
+                <span class="tag-html5">HTML5</span>
+                <span class="tag-css3">CSS3</span>
+                <span class="tag-dbm">Database Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== 6. CREDENTIALS & CERTIFICATIONS ======================== -->
+    <section class="section credentials-section" id="credentials">
+      <div class="container">
+        <div class="section-heading">
+          <span class="sub-heading"><i class="fa-solid fa-award"></i> Verified Credentials</span>
+          <h2 class="main-heading">Certifications &amp; Accreditations</h2>
+          <p class="heading-lead">Demonstrated proficiency across cloud engineering, full-stack development, and artificial intelligence.</p>
+        </div>
+
+        <div class="credentials-grid">
+          <!-- Cert 1 -->
+          <div class="glass-card cert-card" tabindex="0" role="button" aria-label="View Digital Danger Zone Certificate" onclick="openCertModal('assets/certificates/Certifcate1.png', 'Digital Danger Zone: Protecting Yourself in the Age of Digital Deception', 'Philippine Countryville College Inc. & DICT Region 10 — Validation of participation in a BSIT seminar-workshop focused on digital safety, cybersecurity awareness, and safeguarding against online threats and digital deception.')">
+            <div class="cert-img-container">
+              <img src="assets/certificates/Certifcate1.png" alt="AWS Solutions Architect Certificate" loading="lazy">
+              <div class="cert-inspect-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Inspect Credential</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h4>Digital Danger Zone: Protecting Yourself in the Age of Digital Deception</h4>
+              <p>Philippine Countryville College Inc. & DICT Region 10</p>
+              <span class="cert-status-badge"><i class="fa-solid fa-circle-check"></i> Verified Active</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="glass-card cert-card" tabindex="0" role="button" aria-label="View Code + Communicate Certificate" onclick="openCertModal('assets/certificates/Certificate2.png', 'Code + Communicate: IT Hard Skills and Soft Skills That Industry Demands', 'Torres Capitol College, Inc. (BSIT Department) — Validation of participation in the 2026 BSIT Seminar-Workshop focused on combining technical programming capabilities with professional communication, collaboration, and workplace innovation.')">
+            <div class="cert-img-container">
+              <img src="assets/certificates/Certificate2.png" alt="Google Cloud Developer Certificate" loading="lazy">
+              <div class="cert-inspect-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Inspect Credential</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h4>Code + Communicate: IT Hard Skills and Soft Skills That Industry Demands</h4>
+              <p>Torres Capitol College, Inc. (BSIT Department)</p>
+              <span class="cert-status-badge"><i class="fa-solid fa-circle-check"></i> Verified Active</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="glass-card cert-card" tabindex="0" role="button" aria-label="View Frontend Forge Workshop Certificate" onclick="openCertModal('assets/certificates/Certificate3.png', 'Frontend Forge Workshop — DEVCON Bits of Light Roadshow', 'DEVCON Bukidnon Chapter & DICT Region X — Validation of active participation in hands-on micro-robotics, block-based coding, basic programming logic, and problem-solving at Torres Capitol College, Inc.')">
+            <div class="cert-img-container">
+              <img src="assets/certificates/Certificate3.png" alt="Meta Full-Stack Engineer Certificate" loading="lazy">
+              <div class="cert-inspect-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Inspect Credential</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h4>Frontend Forge Workshop — DEVCON Bits of Light Roadshow</h4>
+              <p>DEVCON Bukidnon Chapter & DICT Region X</p>
+              <span class="cert-status-badge"><i class="fa-solid fa-circle-check"></i> Verified Active</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="glass-card cert-card" tabindex="0" role="button" aria-label="View Pre-Internship Training Certificate" onclick="openCertModal('assets/certificates/Certificate4.jpg', 'Two-Day Mandatory Pre-Internship Training Program (SIPP)', 'Torres Capitol College, Inc. — Validation of completion of pre-internship readiness training focused on bridging academic learning with workplace experience, industry preparedness, and professional deployment under the Student Internship Program in the Philippines (SIPP).   ')">
+            <div class="cert-img-container">
+              <img src="assets/certificates/Certificate4.jpg" alt="Two-Day Mandatory Pre-Internship Training Program (SIPP)" loading="lazy">
+              <div class="cert-inspect-overlay">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span>Inspect Credential</span>
+              </div>
+            </div>
+            <div class="cert-details">
+              <h4>Two-Day Mandatory Pre-Internship Training Program (SIPP)</h4>
+              <p>Torres Capitol College, Inc.</p>
+              <span class="cert-status-badge"><i class="fa-solid fa-circle-check"></i> Verified Active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== 7. TESTIMONIALS & ENDORSEMENTS ======================== -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <span class="sub-heading"><i class="fa-solid fa-comments"></i> Endorsements</span>
+          <h2 class="main-heading">What Colleagues &amp; Clients Say</h2>
+          <p class="heading-lead">Testimonials reflecting commitment to high technical standards, clear communication, and reliable delivery.</p>
+        </div>
+
+        <!-- Testimonial Carousel Wrapper -->
+        <div class="testimonial-carousel-container" id="testimonialCarousel" tabindex="0" role="region" aria-label="Client & Colleague Testimonials Carousel">
+          <!-- Floating Navigation Buttons -->
+          <button type="button" class="carousel-nav-btn carousel-prev-btn" id="carouselPrevBtn" aria-label="Previous Testimonials">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          
+          <button type="button" class="carousel-nav-btn carousel-next-btn" id="carouselNextBtn" aria-label="Next Testimonials">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- Carousel Stage Viewport -->
+          <div class="testimonial-carousel-viewport">
+            <div class="testimonials-track" id="testimonialsTrack">
+              <!-- Testimonial 1 -->
+              <div class="glass-card testimonial-card" data-testimonial-index="0">
+                <span class="testimonial-quote-icon" aria-hidden="true">&ldquo;</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "Neil Herbert Betacura successfully developed an organized and user-friendly system designed to support students during their pre-teaching activities. His dedication, creativity, and attention to detail made the system efficient and easy to navigate. His work demonstrated excellent technical skills and a strong commitment to providing students with a convenient learning experience."
+                </p>
+                <div class="test-author">
+                  <div class="author-avatar">
+                    <img src="assets/testimonials/Witness1.jpeg" alt="Melisa Jean Villegas" class="reviewer-photo" loading="lazy">
+                  </div>
+                  <div class="test-author-info">
+                    <h4>Melisa Jean Villegas</h4>
+                    <p>CMU Student • BPED 4</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="glass-card testimonial-card" data-testimonial-index="1">
+                <span class="testimonial-quote-icon" aria-hidden="true">&ldquo;</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "Neil Herbert Betacura demonstrated great dedication and initiative by developing a system to help students prepare for their semi-final defense. His effort provided valuable support, helping students become more organized and prepared for their presentations. His commitment to helping others reflects his creativity, technical skills, and willingness to make a positive difference in the academic community."
+                </p>
+                <div class="test-author">
+                  <div class="author-avatar">
+                    <img src="assets/testimonials/Ilonen.jpeg" alt="Christine Joy Ilonen" class="reviewer-photo" loading="lazy">
+                  </div>
+                  <div class="test-author-info">
+                    <h4>Christine Joy Ilonen</h4>
+                    <p>TCC Student • BSIT 4</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="glass-card testimonial-card" data-testimonial-index="2">
+                <span class="testimonial-quote-icon" aria-hidden="true">&ldquo;</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "Neil Herbert Betacura stepped up during a time when everything felt complicated and overwhelming by developing a dormitory website to help students in times of need. His initiative, dedication, and willingness to help made a difficult situation easier to manage. Despite the challenges and limited time, he turned an urgent need into a meaningful and practical solution. His work truly reflects resourcefulness, commitment, and a genuine desire to help others."
+                </p>
+                <div class="test-author">
+                  <div class="author-avatar">
+                    <img src="assets/testimonials/Witness2.jpg" alt="Kimberly Puyot" class="reviewer-photo" loading="lazy">
+                  </div>
+                  <div class="test-author-info">
+                    <h4>Kimberly Puyot</h4>
+                    <p>CMU Student • BSIM 3</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="glass-card testimonial-card" data-testimonial-index="3">
+                <span class="testimonial-quote-icon" aria-hidden="true">&ldquo;</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "Neil Herbert Betacura once again proved his ability to turn challenges into solutions by developing a practical system that addressed students' needs during a difficult time. His creativity, patience, and technical knowledge helped transform a complicated process into something more organized and accessible. His willingness to take action when help was needed most shows his dedication to making a positive impact through technology."
+                </p>
+                <div class="test-author">
+                  <div class="author-avatar">
+                    <img src="assets/testimonials/Witness3.jpeg" alt="Nino Victor Dy" class="reviewer-photo" loading="lazy">
+                  </div>
+                  <div class="test-author-info">
+                    <h4>Nino Victor Dy</h4>
+                    <p>TCC Student • BSIT 4</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 5 -->
+              <div class="glass-card testimonial-card" data-testimonial-index="4">
+                <span class="testimonial-quote-icon" aria-hidden="true">&ldquo;</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "I still remember how Neil Herbert Betacura helped me during a time when everything felt so complicated and overwhelming. When I needed help the most, he willingly took the time and effort to create a dormitory website that could make things easier for us."
+                </p>
+                <div class="test-author">
+                  <div class="author-avatar">
+                    <img src="assets/testimonials/Witness4.jpeg" alt="John Mike Harnaiz" class="reviewer-photo" loading="lazy">
+                  </div>
+                  <div class="test-author-info">
+                    <h4>John Mike Harnaiz</h4>
+                    <p>TCC Student • BSIT 4</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Testimonial 6 -->
+              <div class="glass-card testimonial-card" data-testimonial-index="5">
+                <span class="testimonial-quote-icon" aria-hidden="true">&ldquo;</span>
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "I remember how Neil Herbert Betacura helped me when my laptop was constantly lagging and experiencing problems with some malfunctioning drivers. I was having a hard time dealing with the issue, but he willingly took the time to troubleshoot and fix it. I genuinely appreciate his patience, technical knowledge, and willingness to help without hesitation. What I appreciated most was that he didn't just fix the problem; he also helped ease my frustration when I needed assistance. Thank you, Neil, for sharing your skills and always being willing to help."
+                </p>
+                <div class="test-author">
+                  <div class="author-avatar">
+                    <img src="assets/testimonials/Witness5.jpg" alt="April Jean Villas" class="reviewer-photo" loading="lazy">
+                  </div>
+                  <div class="test-author-info">
+                    <h4>April Jean Villas</h4>
+                    <p>TCC Instructor • BSIT Department Head</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Control Bar: Page Indicator & Mobile Navigation Buttons -->
+          <div class="carousel-control-footer">
+            <div class="carousel-pagination-badge" id="carouselPageIndicator" aria-live="polite">
+              <span class="page-current" id="carouselPageCurrent">01</span>
+              <span class="page-slash">/</span>
+              <span class="page-total" id="carouselPageTotal">04</span>
+            </div>
+            
+            <div class="carousel-mobile-arrows">
+              <button type="button" class="carousel-mini-btn" id="carouselMiniPrevBtn" aria-label="Previous Page">
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button type="button" class="carousel-mini-btn" id="carouselMiniNextBtn" aria-label="Next Page">
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== 8. CONTACT SECTION ======================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="sub-heading"><i class="fa-solid fa-paper-plane"></i> Get in Touch</span>
+          <h2 class="main-heading">Let's Build Something Exceptional</h2>
+          <p class="heading-lead">Have a project in mind, need technical leadership, or want to discuss a software consultation? Send me a message!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Fast Copy -->
+          <div class="contact-info-column">
+            <div class="glass-card contact-info-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-card-content">
+                <h4>Direct Email</h4>
+                <p>neilherbertbetacura@gmail.com</p>
+                <button class="copy-btn" data-copy="neilherbertbetacura@gmail.com"><i class="fa-regular fa-copy"></i> Copy Email</button>
+              </div>
+            </div>
+
+            <div class="glass-card contact-info-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-card-content">
+                <h4>Primary Location</h4>
+                <p>P-2, Poblacion, Kadingilan, Bukidnon</p>
+                <span class="timezone-badge"><i class="fa-regular fa-clock"></i> UTC-8 (PST) / UTC+8 (Flexible)</span>
+              </div>
+            </div>
+
+            <div class="glass-card contact-info-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="contact-card-content">
+                <h4>Availability &amp; Response</h4>
+                <p>Currently accepting select contracts &amp; senior roles.</p>
+                <span class="response-badge"><i class="fa-solid fa-circle-check"></i> Typical Response: &lt; 12 hours</span>
+              </div>
+            </div>
+
+            <!-- Social Connectivity Strip -->
+            <div class="glass-card social-strip-card">
+              <h4>Professional Networks</h4>
+              <div class="network-buttons">
+                <a href="https://github.com/Kennyxuss" target="_blank" rel="noopener noreferrer" class="net-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/neil-herbert-betacura-756865450/" target="_blank" rel="noopener noreferrer" class="net-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="net-btn"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="glass-card contact-form-card">
+            <h3>Send a Direct Inquiry</h3>
+            <p class="form-desc">Fill out this form and I will get back to you promptly.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="userName">Your Name <span class="required">*</span></label>
+                  <input type="text" id="userName" name="name" class="form-control" placeholder="e.g. Jane Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="userEmail">Email Address <span class="required">*</span></label>
+                  <input type="email" id="userEmail" name="email" class="form-control" placeholder="jane@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="projectType">Project Type / Inquiry</label>
+                  <select id="projectType" name="projectType" class="form-control">
+                    <option value="Full-Stack Web App">Full-Stack Web Application</option>
+                    <option value="AI Integration">AI Integration &amp; LLM Automation</option>
+                    <option value="Backend & Database">Backend APIs &amp; Database Architecture</option>
+                    <option value="Mobile App">Mobile Application (iOS / Android)</option>
+                    <option value="Engineering Consultation">Technical Architecture Consultation</option>
+                    <option value="Full-time Role">Full-time Career Opportunity</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="timeline">Estimated Timeline</label>
+                  <select id="timeline" name="timeline" class="form-control">
+                    <option value="Immediate">Immediate (&lt; 2 Weeks)</option>
+                    <option value="1-2 Months">1 - 2 Months</option>
+                    <option value="3+ Months">3+ Months / Ongoing</option>
+                    <option value="Exploratory">Flexible / Exploratory</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="userMessage">Project Details or Message <span class="required">*</span></label>
+                <textarea id="userMessage" name="message" rows="5" class="form-control" placeholder="Tell me about your project goals, key requirements, or questions..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block submit-btn" id="submitFormBtn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="brand-logo">
+          <span class="logo-box">NH</span>
+          <span class="logo-text">Neil<span>Betacura</span></span>
+        </a>
+        <p class="footer-tagline">Architecting elegant, resilient, and human-centric software for tomorrow's web.</p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-legal">
+        <h4>Rights &amp; License</h4>
+        <p>&copy; 2026 Neil Herbert Betacura Rivera. All Rights Reserved.</p>
+        <p class="license-note">Custom-crafted architecture. Free of third-party copyrighted materials.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================== PROJECT DETAILS MODAL ======================== -->
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="project-modal-backdrop" id="modalBackdrop"></div>
+    <div class="glass-card project-modal-content">
+      <button class="modal-close-btn" id="closeProjectModalBtn" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-body">
+        <div class="modal-image-wrapper">
+          <img src="assets/projects/nexusflow.svg" alt="Project Architecture Preview" id="modalProjectImg">
+        </div>
+        
+        <div class="modal-text-content">
+          <span class="modal-category-badge" id="modalCategory">Category</span>
+          <h3 class="modal-title" id="modalTitle">Project Title</h3>
+          
+          <div class="modal-metrics-box" id="modalMetrics">
+            <!-- Dynamic Metrics injected via JS -->
+          </div>
+
+          <p class="modal-description" id="modalDescription">
+            Project comprehensive description goes here...
+          </p>
+
+          <div class="modal-tags-container">
+            <h5>Tech Stack &amp; Infrastructure:</h5>
+            <div class="modal-tags-list" id="modalTagsList">
+              <!-- Dynamic tags injected via JS -->
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <a href="#contact" class="btn btn-primary modal-contact-btn" id="modalInquireBtn">Inquire About This Solution</a>
+            <button class="btn btn-outline" id="modalDismissBtn">Close Preview</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== CERTIFICATE LIGHTBOX MODAL ======================== -->
+  <div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="cert-modal-backdrop" id="certBackdrop"></div>
+    <div class="cert-modal-dialog">
+      <button class="cert-close-btn" id="closeCertBtn" aria-label="Close Certificate">&times;</button>
+      <div class="cert-image-frame">
+        <img src="" alt="Verified Credential Preview" id="certModalImg">
+      </div>
+      <div class="cert-info-bar">
+        <h4 id="certModalTitle">Certificate Title</h4>
+        <p id="certModalDesc">Certificate description and verification details.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== AI PORTFOLIO ASSISTANT (NovaBot) ======================== -->
+  <div class="chatbot-widget-container">
+    <!-- Chatbot Toggle Floating Button -->
+    <button class="chatbot-launcher-btn" id="chatbotLauncherBtn" title="Chat with NovaBot - Neil Herbert Betacura's AI Assistant" aria-label="Open AI Assistant">
+      <div class="launcher-robot-icon"><i class="fa-solid fa-robot"></i></div>
+      <div class="launcher-close-icon"><i class="fa-solid fa-xmark"></i></div>
+      <span class="online-pulse-dot"></span>
+    </button>
+
+    <!-- Floating Chat Window -->
+    <div class="glass-card chatbot-window" id="chatbotWindow" aria-hidden="true">
+      <div class="chatbot-header">
+        <div class="bot-profile">
+          <div class="bot-avatar-crest">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div>
+            <h4>NovaBot AI</h4>
+            <span class="bot-status"><i class="fa-solid fa-circle"></i> Online • Neil Herbert Betacura's Portfolio Guide</span>
+          </div>
+        </div>
+        <button class="chat-minimize-btn" id="chatMinimizeBtn">&times;</button>
+      </div>
+
+      <div class="chat-messages-box" id="chatMessagesBox">
+        <!-- Initial Incoming Welcome Message -->
+        <div class="chat-message incoming">
+          <div class="msg-bot-avatar"><i class="fa-solid fa-robot"></i></div>
+          <div class="msg-bubble">
+            <p>Hello! 👋 I'm <strong>NovaBot</strong>, Neil Herbert Betacura's portfolio AI assistant. Ask me anything about his technical stack, projects, work experience, services, or how to get in touch!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Suggestion Action Chips -->
+      <div class="quick-chips-wrapper">
+        <button class="quick-chip" data-prompt="tech stack">💻 Tech Stack</button>
+        <button class="quick-chip" data-prompt="projects">🚀 Projects</button>
+        <button class="quick-chip" data-prompt="experience">💼 Experience</button>
+        <button class="quick-chip" data-prompt="services">🛠️ Services</button>
+        <button class="quick-chip" data-prompt="rates">💰 Hire &amp; Rates</button>
+        <button class="quick-chip" data-prompt="contact">📬 Contact</button>
+      </div>
+
+      <!-- Chat Input Area -->
+      <form class="chat-input-bar" id="chatForm">
+        <input type="text" id="chatInput" placeholder="Ask about skills, projects, background..." autocomplete="off" required>
+        <button type="submit" id="chatSendBtn" aria-label="Send message"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" title="Back to top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- External Library: Typed.js for smooth text animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" referrerpolicy="no-referrer"></script>
+  
+  <!-- Core Modular Application Script -->
+  <script src="script.js"></script>
+</body>
+</html>

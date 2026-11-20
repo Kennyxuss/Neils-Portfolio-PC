@@ -1,0 +1,12 @@
+# Git ignore rules for Vercel and web deployment
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
+# Local backup directories
+portfolio-website-backup/

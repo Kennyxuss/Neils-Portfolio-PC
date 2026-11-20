@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCert_aws-" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161824"/>
+      <stop offset="100%" stop-color="#0b0d14"/>
+    </linearGradient>
+    <linearGradient id="goldGrad_aws-" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="550" rx="20" fill="url(#bgCert_aws-)"/>
+  
+  <!-- Outer Gold Border -->
+  <rect x="20" y="20" width="760" height="510" rx="14" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.6"/>
+  <!-- Inner Thin Border -->
+  <rect x="30" y="30" width="740" height="490" rx="10" fill="none" stroke="#2a2e42" stroke-width="1.5"/>
+
+  <!-- Corner Ornaments -->
+  <path d="M35 60 L35 35 L60 35" fill="none" stroke="#f59e0b" stroke-width="3"/>
+  <path d="M765 60 L765 35 L740 35" fill="none" stroke="#f59e0b" stroke-width="3"/>
+  <path d="M35 490 L35 515 L60 515" fill="none" stroke="#f59e0b" stroke-width="3"/>
+  <path d="M765 490 L765 515 L740 515" fill="none" stroke="#f59e0b" stroke-width="3"/>
+
+  <!-- Organization Top Crest -->
+  <circle cx="400" cy="100" r="36" fill="#1f2334" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="106" fill="#f59e0b" font-size="20" font-family="sans-serif" font-weight="bold" text-anchor="middle">★</text>
+
+  <!-- Title & Certificate Heading -->
+  <text x="400" y="170" fill="#f59e0b" font-size="14" font-family="sans-serif" letter-spacing="4" font-weight="bold" text-anchor="middle">AMAZON WEB SERVICES</text>
+  <text x="400" y="205" fill="#f8fafc" font-size="28" font-family="'Times New Roman', serif" font-weight="bold" text-anchor="middle">CERTIFICATE OF ACHIEVEMENT</text>
+  
+  <line x1="300" y1="225" x2="500" y2="225" stroke="#f59e0b" stroke-width="1.5" opacity="0.7"/>
+
+  <text x="400" y="260" fill="#94a3b8" font-size="14" font-family="sans-serif" text-anchor="middle">This credential certifies that the candidate has demonstrated industry mastery in</text>
+  <text x="400" y="305" fill="#ffffff" font-size="26" font-family="sans-serif" font-weight="bold" text-anchor="middle">AWS Certified Solutions Architect</text>
+  
+  <!-- Badge Pill -->
+  <rect x="330" y="330" width="140" height="28" rx="14" fill="#f59e0b" opacity="0.15"/>
+  <rect x="330" y="330" width="140" height="28" rx="14" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="348" fill="#f59e0b" font-size="11" font-family="sans-serif" font-weight="bold" letter-spacing="1" text-anchor="middle">ASSOCIATE LEVEL</text>
+
+  <text x="400" y="395" fill="#94a3b8" font-size="13" font-family="sans-serif" text-anchor="middle">Covering high-availability architectures, scalable APIs, zero-trust security &amp; cloud engineering.</text>
+
+  <!-- Footer Signatures & Verification -->
+  <line x1="100" y1="465" x2="280" y2="465" stroke="#334155" stroke-width="1.5"/>
+  <text x="190" y="485" fill="#64748b" font-size="12" font-family="sans-serif" text-anchor="middle">Certification Director</text>
+  <text x="190" y="455" fill="#94a3b8" font-size="14" font-family="'Brush Script MT', cursive" text-anchor="middle">M. Sterling, Ph.D.</text>
+
+  <!-- Verification Seal Center -->
+  <circle cx="400" cy="460" r="28" fill="#1b1e2e" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="400" cy="460" r="22" fill="none" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="400" y="464" fill="#f59e0b" font-size="10" font-family="sans-serif" font-weight="bold" text-anchor="middle">VERIFIED</text>
+
+  <line x1="520" y1="465" x2="700" y2="465" stroke="#334155" stroke-width="1.5"/>
+  <text x="610" y="485" fill="#64748b" font-size="12" font-family="sans-serif" text-anchor="middle">Credential ID: AWS-PSA-2025-8849</text>
+  <text x="610" y="455" fill="#10b981" font-size="12" font-family="monospace" text-anchor="middle">STATUS: ACTIVE / VALID</text>
+</svg>
